@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jasdeepkaurlab2.PageController">
+   <children>
+      <TableView fx:id="Tableview" layoutX="158.0" layoutY="69.0" prefHeight="268.0" prefWidth="392.0">
+        <columns>
+          <TableColumn fx:id="TableID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="TableName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="TableLocation" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="TableMobileNumber" prefWidth="75.0" text="MobileNumber" />
+            <TableColumn fx:id="TableCost" prefWidth="75.0" text="Cost" />
+        </columns>
+      </TableView>
+      <Button layoutX="328.0" layoutY="355.0" mnemonicParsing="false" onAction="#Load" text="Load" />
+      <Button layoutX="328.0" layoutY="397.0" mnemonicParsing="false" onAction="#Insert" text="Insert" />
+      <Button layoutX="328.0" layoutY="444.0" mnemonicParsing="false" onAction="#Update" text="Update" />
+      <Button layoutX="328.0" layoutY="487.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+      <TextField fx:id="InputLocation" layoutX="76.0" layoutY="422.0" promptText="EnterLocation" />
+      <TextField fx:id="InputName" layoutX="76.0" layoutY="384.0" promptText="EnterName" />
+      <TextField fx:id="InputID" layoutX="76.0" layoutY="355.0" promptText="EnterID" />
+      <TextField fx:id="InputMobileNumber" layoutX="76.0" layoutY="456.0" promptText="EnterMobileNumber" />
+      <TextField fx:id="InputCost" layoutX="76.0" layoutY="487.0" promptText="EnterCost" />
+   </children>
+</Pane>
